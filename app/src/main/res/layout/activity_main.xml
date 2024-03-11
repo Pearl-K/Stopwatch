@@ -12,26 +12,50 @@
         android:layout_height="wrap_content"
         android:text="00"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="303dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_second"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tv_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00"
+        android:text=":00"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="303dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"
+        tools:layout_editor_absoluteX="181dp" />
 
     <TextView
         android:id="@+id/tv_millsecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00"
+        android:text=",00"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="250dp"
-        tools:layout_editor_absoluteY="324dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_second"
+        tools:layout_editor_absoluteX="245dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/btn_start"
+        android:text="@string/btn_start"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/btn_restart"
+        android:text="@string/btn_restart"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="440dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
