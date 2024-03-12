@@ -14,7 +14,9 @@
         android:textSize="36sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_second"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintEnd_toStartOf="@+id/tv_second"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -24,9 +26,11 @@
         android:text=":00"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_millsecond"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_minute"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348"
-        tools:layout_editor_absoluteX="181dp" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <TextView
         android:id="@+id/tv_millsecond"
@@ -35,27 +39,31 @@
         android:text=",00"
         android:textSize="20sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tv_second"
-        tools:layout_editor_absoluteX="245dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_second" />
 
     <Button
+        android:id="@+id/btn_start"
         android:layout_width="80dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="100dp"
         android:backgroundTint="@color/btn_start"
         android:text="@string/btn_start"
-        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/btn_restart"
         android:layout_width="80dp"
         android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="@color/btn_restart"
         android:text="@string/btn_restart"
-        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="440dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
