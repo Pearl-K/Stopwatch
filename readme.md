@@ -14,5 +14,5 @@
   - MainActivity (start, pause, refresh)
 
 
-### 실행 화면
+### 4️⃣ 실행 화면
 ![실행 화면](https://github.com/Pearl-K/Stopwatch/blob/main/app/src/main/res/runpic.PNG)
