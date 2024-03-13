@@ -8,6 +8,7 @@
  - Activity & Fragment
  - View
  - Constraint Layout (Baseline & Chain)
+ - Thread (UI thread & Background thread)
 
 
 ### 3️⃣ 구현 Method
